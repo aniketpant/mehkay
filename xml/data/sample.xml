@@ -1,0 +1,4 @@
+<persons>
+  <person name="Foo" age="21"></person>
+  <person name="Bar" age="22"></person>
+</persons>
