@@ -1,3 +1,3 @@
-# snip-snip
+# mehkay
 
-Collecting everything big or small!
+The average attempt at collecting stuff.
