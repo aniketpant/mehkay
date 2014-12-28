@@ -4,10 +4,7 @@
 
 void StackInit(stackT *stackP)
 {
-    stackNodeT *node = (stackNodeT *) malloc(sizeof(stackNodeT));
-
-    node->next = NULL;
-    stackP->top = node;
+    stackP->top = NULL;
 }
 
 void StackDestroy(stackT *stackP)
@@ -39,5 +36,5 @@ stackElementT StackPop(stackT *stackP)
 
 int StackIsEmpty(stackT *stackP)
 {
-    return stackP->top->next == NULL;
+    return stackP->top == NULL;
 }
