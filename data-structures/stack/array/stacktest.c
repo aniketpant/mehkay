@@ -15,13 +15,13 @@ int main(void)
     StackInit(&stack, strlen(str));
 
     for (traverse = str; *traverse != '\0'; traverse++) {
-      StackPush(&stack, *traverse);
+        StackPush(&stack, *traverse);
     }
 
     printf("\nPopped characters are: ");
 
     while (!StackIsEmpty(&stack)) {
-      printf("%c", StackPop(&stack));
+        printf("%c", StackPop(&stack));
     }
 
     printf("\n");
