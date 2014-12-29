@@ -39,4 +39,7 @@ void TreePrint(treeT *treeP);
 void NodePrintPostOrder(treeNodeT *node);
 void TreePrintPostOrder(treeT *treeP);
 
+int NodeHasPathSum(treeNodeT *node, treeElementT sum);
+int TreeHasPathSum(treeT *treeP, treeElementT sum);
+
 #endif

@@ -151,3 +151,18 @@ void TreePrintPostOrder(treeT *treeP)
 {
     NodePrintPostOrder(treeP->root);
 }
+
+int NodeHasPathSum(treeNodeT *node, treeElementT sum)
+{
+    if (node == NULL) {
+        return sum == 0;
+    } else {
+        int subSum = sum - node->data;
+        return (NodeHasPathSum(node->left, subSum) || NodeHasPathSum(node->right, subSum));
+    }
+}
+
+int TreeHasPathSum(treeT *treeP, treeElementT sum)
+{
+    return NodeHasPathSum(treeP->root, sum);
+}
